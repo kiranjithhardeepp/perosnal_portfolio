@@ -9,6 +9,11 @@
 
   .hero {
     max-width: 200px;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+
+  .hero:hover {
+    transform: scale(1.05);
   }
 
   span {
