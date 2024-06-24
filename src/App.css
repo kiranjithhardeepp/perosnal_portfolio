@@ -6,6 +6,8 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --starfield-bg-color: #f0f0f0; /* Light mode background for Starfield */
+  --star-color: #000; /* Light mode star color */
 }
 
 [data-theme='dark'] {
@@ -16,6 +18,8 @@
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+  --starfield-bg-color: #000; /* Dark mode background for Starfield */
+  --star-color: #fff; /* Dark mode star color */
 }
 
 body {
@@ -74,6 +78,12 @@ p {
   cursor: pointer;
 }
 
+.starfield {
+  background-color: var(--starfield-bg-color);
+  color: var(--star-color);
+  /* additional Starfield-specific styles here */
+}
+
 @media (width >= 800px) {
   #root {
     gap: 100px;
@@ -92,17 +102,17 @@ p {
   .sectionTitle {
     margin-bottom: 60px;
   }
+}
 
-  @media (width >= 1400px) {
-    #root {
-      gap: 200px;
-    }
-    h1 {
-      font-size: 48px;
-    }
+@media (width >= 1400px) {
+  #root {
+    gap: 200px;
+  }
+  h1 {
+    font-size: 48px;
+  }
 
-    .sectionTitle {
-      margin-bottom: 75px;
-    }
+  .sectionTitle {
+    margin-bottom: 75px;
   }
 }

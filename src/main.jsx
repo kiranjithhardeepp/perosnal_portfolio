@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
-import { ThemeProvider } from './Common/ThemeContext.jsx';
+import { ThemeProvider } from './Common/ThemeContext.jsx'; // Adjust the import path as needed
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
