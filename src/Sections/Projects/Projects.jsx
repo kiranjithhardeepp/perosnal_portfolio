@@ -1,6 +1,8 @@
 import styles from "./ProjectsStyles.module.css";
 import Todo from "../../assets/Todo.png";
 import weather from "../../assets/weatherapp.png";
+import Trans from "../../assets/Transaction.png";
+
 import ProjectCards from "../../Common/ProjectCards";
 
 function Projects() {
@@ -8,6 +10,11 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
+        <ProjectCards
+          src={Trans}
+          p="Transaction-Mern"
+          link="https://frontent-log-mern.onrender.com/"
+        />
         <ProjectCards
           src={Todo}
           p="Todo App"
