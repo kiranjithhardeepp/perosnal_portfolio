@@ -30,10 +30,16 @@ const Starfield = () => {
 
     const drawStars = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Retrieve the star color from CSS variables
+      const starColor = getComputedStyle(document.documentElement)
+        .getPropertyValue('--star-color').trim();
+      
+      // Apply the star color
       stars.forEach((star) => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = starColor;
         ctx.fill();
         ctx.closePath();
         star.x += star.speed;
@@ -41,6 +47,7 @@ const Starfield = () => {
           star.x = 0;
         }
       });
+
       requestAnimationFrame(drawStars);
     };
 

@@ -1,27 +1,22 @@
-/* Starfield.module.css */
-
 .wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-    background-color: var(--starfield-bg-color);
-    color: var(--star-color);  
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background-color: var(--starfield-bg-color);
+  color: var(--star-color);  
+}
 
-  [data-theme='dark'] .wrapper {
-    /* Dark mode styles */
-    background-color: var(--starfield-bg-color-dark);
-    color: var(--star-color-dark);
-    /* Additional dark mode styles specific to your starfield component */
-  }
-  
-  canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  
+[data-theme='dark'] .wrapper {
+  background-color: var(--starfield-bg-color); /* Use the same variable for dark mode */
+  color: var(--star-color); /* Use the same variable for dark mode */
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
