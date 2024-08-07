@@ -13,7 +13,7 @@ function Projects() {
         <ProjectCards
           src={netflix}
           p="Netflix Clone"
-          link="https://kiranjithnetflixclone.netlify.app/"
+          link="https://netfflixclone.onrender.com/"
           gitLink="https://github.com/kiranjithhardeepp/NetfFlixClone"
         />
         <ProjectCards
