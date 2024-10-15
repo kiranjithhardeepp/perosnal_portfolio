@@ -9,7 +9,8 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/kiranjithhardeep.pdf";
+import resume from "../../assets/kiranjithhardeep.pdf";
+
 import { useTheme } from "../../Common/ThemeContext";
 
 function Hero() {
@@ -71,7 +72,7 @@ function Hero() {
           With a passion for developing modern React web apps for commercial
           businesses.
         </p>
-        <a href={CV} download>
+        <a href={resume} download>
           <button className="hover">Resume</button>
         </a>
       </div>
