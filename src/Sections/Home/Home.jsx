@@ -9,7 +9,7 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import resume from "../../assets/kiranjithhardeep.pdf";
+import resume from "../../assets/resume.pdf";
 
 import { useTheme } from "../../Common/ThemeContext";
 
