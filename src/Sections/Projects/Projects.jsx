@@ -3,6 +3,7 @@ import Todo from "../../assets/Todo.png";
 import weather from "../../assets/weatherapp.png";
 import Trans from "../../assets/Transaction.png";
 import netflix from "../../assets/netflix.png";
+import Authentication from "../../assets/Authentication.png";
 import ProjectCards from "../../Common/ProjectCards";
 
 function Projects() {
@@ -17,8 +18,14 @@ function Projects() {
           gitLink="https://github.com/kiranjithhardeepp/NetfFlixClone"
         />
         <ProjectCards
+          src={Authentication}
+          p="Authenctication-MERN"
+          link="https://advancedauthentication-mern.onrender.com/"
+          gitLink="https://github.com/kiranjithhardeepp/AdvancedAuthentication_MERN"
+        />
+        <ProjectCards
           src={Trans}
-          p="Transaction-Mern"
+          p="Transaction-MERN"
           link="https://frontent-log-mern.onrender.com/"
           gitLink="https://github.com/kiranjithhardeepp/login_mern"
         />
